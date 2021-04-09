@@ -12,6 +12,7 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
     link   = "green"
     text   = "orange"
     ```
+  - Use `blogdown::build_site()` to build `public` folder.
 - 2020-04-09 As of blogdown 1.2, if using hugo youtube shortcode in `.rmd` file, must use format `{{% ... %}}`, not `{{< ... >}}`, though both are valid for `.md` file.
 ## Steps to recreate this manually in RStudio console
 
