@@ -2,6 +2,16 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
 
 ## Node
 
+- 2020-04-09 Created testing website
+  - https://blogdown-sk3-test.jsiu.dev/
+  - With following color
+    ```toml
+    [Params.color]
+    bg     = "black"
+    border = "red"
+    link   = "green"
+    text   = "orange"
+    ```
 - 2020-04-09 As of blogdown 1.2, if using hugo youtube shortcode in `.rmd` file, must use format `{{% ... %}}`, not `{{< ... >}}`, though both are valid for `.md` file.
 ## Steps to recreate this manually in RStudio console
 
@@ -21,12 +31,14 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
    - Add `{{< youtube buiLez6AMU8 >}}` to end of file
 7. `blogdown::new_post("youtube rmd",ext="R=.rmd")`
    - Add following to end of file
-     ```
-     Shortcode format with `<`
-     {{< youtube buiLez6AMU8 >}}
-     Shortcode format with `%`
-     {{% youtube buiLez6AMU8 %}}
-    ```
+
+      ```txt
+      Shortcode format with `<`
+      {{< youtube buiLez6AMU8 >}}
+      Shortcode format with `%`
+      {{% youtube buiLez6AMU8 %}}
+      ```
+
 8. `blogdown::serve_site()`
 
 ## RStudio Version
