@@ -2,6 +2,8 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
 
 ## Node
 
+- 2020-04-09 `blogdown::build_site(build_rmd = TRUE)` with rmd files seems to work correctly only when blogdown is not running server(`blogdown::stop_server()`)
+
 - 2020-04-09 Created testing website
   - https://blogdown-sk3-test.jsiu.dev/
   - With following color
