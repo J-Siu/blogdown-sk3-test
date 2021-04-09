@@ -2,8 +2,8 @@ Testing steps for https://github.com/J-Siu/hugo-theme-sk3/issues/27#
 
 ## Steps to recreate this manually in RStudio console
 
-> Follow step 1-6 if you want to create this test manually.
-> Jump to step 7 if you download/clone this repository directly.
+> Follow step 1-7 if you want to create this test manually.
+> Jump to step 8 if you download/clone this repository directly.
 
 1. `install.packages("blogdown")`
 2. `blogdown::install_hugo()`
@@ -16,7 +16,15 @@ Testing steps for https://github.com/J-Siu/hugo-theme-sk3/issues/27#
    - Update \<project root\>/config.toml "theme = sk3" to "theme = hugo-theme-sk3"
 6. `blogdown::new_post("youtube")`
    - Add `{{< youtube buiLez6AMU8 >}}` to end of file
-7. `blogdown::serve_site()`
+7. `blogdown::new_post("youtube rmd",ext="R=.rmd")`
+   - Add following to end of file
+     ```
+     Shortcode format with `<`
+     {{< youtube buiLez6AMU8 >}}
+     Shortcode format with `%`
+     {{% youtube buiLez6AMU8 %}}
+    ```
+8. `blogdown::serve_site()`
 
 ## RStudio Version
 

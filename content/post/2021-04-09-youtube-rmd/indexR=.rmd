@@ -1,0 +1,16 @@
+---
+title: youtube rmd
+author: R package build
+date: '2021-04-09'
+slug: []
+categories: []
+tags: []
+---
+
+Shortcode format with `<`
+
+{{< youtube buiLez6AMU8 >}}
+
+Shortcode format with `%`
+
+{{% youtube buiLez6AMU8 %}}
