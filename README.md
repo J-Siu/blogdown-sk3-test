@@ -1,5 +1,8 @@
-Testing steps for https://github.com/J-Siu/hugo-theme-sk3/issues/27#
+Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3) with RStudio + blogdown.
 
+## Node
+
+- 2020-04-09 As of blogdown 1.2, if using hugo youtube shortcode in `.rmd` file, must use format `{{% ... %}}`, not `{{< ... >}}`, though both are valid for `.md` file.
 ## Steps to recreate this manually in RStudio console
 
 > Follow step 1-7 if you want to create this test manually.
