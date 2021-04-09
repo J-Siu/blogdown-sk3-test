@@ -1,17 +1,19 @@
 Testing steps for https://github.com/J-Siu/hugo-theme-sk3/issues/27#
 
-## Steps in RStudio console
+## Steps to recreate this manually in RStudio console
 
-In new project console
+> Follow step 1-6 if you want to create this test manually.
+> Jump to step 7 if you download/clone this repository directly.
+
 1. `install.packages("blogdown")`
 2. `blogdown::install_hugo()`
 3. `blogdown::hugo_version()`
    - Should show `[1] ‘0.82.0’` or higher
 4. `blogdown::new_site()`
-   - Delete config.yaml if exist at project root
+   - Delete config.yaml if exist in \<project root\>
 5. `blogdown::install_theme("J-Siu/hugo-theme-sk3")`
-   - Copy themes/hugo-theme-sk3/config.toml to project root
-   - Update config.toml "theme = sk3" to "theme = hugo-theme-sk3"
+   - Copy \<project root\>/themes/hugo-theme-sk3/config.demo.toml to \<project root\>/config.toml
+   - Update \<project root\>/config.toml "theme = sk3" to "theme = hugo-theme-sk3"
 6. `blogdown::new_post("youtube")`
    - Add `{{< youtube buiLez6AMU8 >}}` to end of file
 7. `blogdown::serve_site()`
