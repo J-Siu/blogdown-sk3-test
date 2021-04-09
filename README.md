@@ -1,13 +1,36 @@
+Testing steps for https://github.com/J-Siu/hugo-theme-sk3/issues/27#
+
 ## Steps in RStudio console
 
 In new project console
 1. `install.packages("blogdown")`
 2. `blogdown::install_hugo()`
-2. `blogdown::new_site()`
+3. `blogdown::hugo_version()`
+   - Should show `[1] ‘0.82.0’` or higher
+4. `blogdown::new_site()`
    - Delete config.yaml if exist at project root
-3. `blogdown::install_theme("J-Siu/hugo-theme-sk3")`
+5. `blogdown::install_theme("J-Siu/hugo-theme-sk3")`
    - Copy themes/hugo-theme-sk3/config.toml to project root
    - Update config.toml "theme = sk3" to "theme = hugo-theme-sk3"
-4. `blogdown::new_post("youtube")`
+6. `blogdown::new_post("youtube")`
    - Add `{{< youtube buiLez6AMU8 >}}` to end of file
-5. `blogdown::serve_site()`
+7. `blogdown::serve_site()`
+
+## RStudio Version
+
+```
+platform       x86_64-apple-darwin17.0
+arch           x86_64
+os             darwin17.0
+system         x86_64, darwin17.0
+status
+major          4
+minor          0.5
+year           2021
+month          03
+day            31
+svn rev        80133
+language       R
+version.string R version 4.0.5 (2021-03-31)
+nickname       Shake and Throw
+```
