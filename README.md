@@ -1,11 +1,13 @@
+[![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=HZF49NM9D35SJ&no_recurring=0&currency_code=CAD)
+
 Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3) with RStudio + blogdown.
 
-## Node
+### Node
 
 - 2020-04-09 `blogdown::build_site(build_rmd = TRUE)` with rmd files seems to work correctly only when blogdown is not running server(`blogdown::stop_server()`)
 
-- 2020-04-09 Created testing website
-  - https://blogdown-sk3-test.jsiu.dev/
+- 2020-04-09
+  - Created testing website https://blogdown-sk3-test.jsiu.dev/
   - With following color
     ```toml
     [Params.color]
@@ -15,8 +17,10 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
     text   = "orange"
     ```
   - Use `blogdown::build_site()` to build `public` folder.
-- 2020-04-09 As of blogdown 1.2, if using hugo youtube shortcode in `.rmd` file, must use format `{{% ... %}}`, not `{{< ... >}}`, though both are valid for `.md` file.
-## Steps to recreate this manually in RStudio console
+- 2020-04-09
+  - blogdown 1.2, if using hugo youtube shortcode in `.rmd` file, must use format `{{% ... %}}`, not `{{< ... >}}`, though both are valid for `.md` file.
+
+### Steps to recreate this manually in RStudio console
 
 > Follow step 1-7 if you want to create this test manually.
 > Jump to step 8 if you download/clone this repository directly.
@@ -44,7 +48,7 @@ Testing repository for [hugo-theme-sk3](https://github.com/J-Siu/hugo-theme-sk3)
 
 8. `blogdown::serve_site()`
 
-## RStudio Version
+### RStudio Version
 
 ```
 platform       x86_64-apple-darwin17.0
